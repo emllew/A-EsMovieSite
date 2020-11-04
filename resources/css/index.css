@@ -92,7 +92,7 @@ cursor: pointer;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #EA4E33;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -110,8 +110,7 @@ cursor: pointer;
 .floorFooter {
   background-image: url(footer2.png);
   text-align:center;
-padding:200px;
-font-size:15px;
+  font-size:15px;
   color:#3fa1c5;
   width: 100%;
   height: 400px;
