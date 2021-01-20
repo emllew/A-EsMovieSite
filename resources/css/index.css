@@ -1,9 +1,13 @@
 body {
   font-family: Concert One;
-  background-image:url(background.png);
+  background-image: url(background.png);
   background-repeat: no-repeat;
-  background-size:cover;
-  background-color: #483F5A;
+  background-color: #483f5a;
+  background-size: cover;
+}
+
+button {
+  float: right;
 }
 
 header {
@@ -13,10 +17,10 @@ header {
   text-align: center;
 }
 h1 {
-  color: #EA4E33;
+  color: #ea4e33;
   font-size: 45px;
   padding: 30px;
-  font-family:Bungee Shade;
+  font-family: Bungee Shade;
 }
 h2 {
   color: #fffcf8;
@@ -24,23 +28,29 @@ h2 {
 }
 
 a {
-  color: #EA4E33;
+  color: #ea4e33;
 }
 
 .card {
   background-color: rgba(255, 255, 255);
-  border-color: #FCDC46;
+  border-color: #fcdc46;
 }
 
 h5:hover {
-  color:#EA4E33;
+  color: #ea4e33;
 }
 
 .onlyQuote:hover {
-font-style:italic;
-cursor: pointer;
+  font-style: italic;
+  cursor: pointer;
 }
 
+iframe {
+  width: 45em;
+  height: 30em;
+  border: none;
+  border-radius: 4px;
+}
 
 
 /* The sidebar menu */
@@ -52,9 +62,11 @@ cursor: pointer;
   top: 0;
   left: 0;
   background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  transition: 250ms ease-in-out;
+  display: block;
+  text-align: center;
 }
 
 /* The sidebar links */
@@ -64,12 +76,12 @@ cursor: pointer;
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: transform 250ms ease-in-out;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #EA4E33;
+  color: #ea4e33;
 }
 
 /* Position and style the close button (top right corner) */
@@ -92,27 +104,24 @@ cursor: pointer;
 }
 
 .openbtn:hover {
-  background-color: #EA4E33;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  background-color: #ea4e33;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
 .floorFooter {
   background-image: url(footer2.png);
-  text-align:center;
-  font-size:15px;
-  color:#3fa1c5;
-  width: 100%;
-  height: 400px;
   background-size: 100% 100%;
+  width: 100%;
+  height: 25em;
+color: rgb(26, 205, 250);
+text-align: center;
 }

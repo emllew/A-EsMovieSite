@@ -8,6 +8,18 @@
 </head>
 <body>
   <div class="container-fluid">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Seen.html">Movies We've Seen</a>
+      <a href="wannaSee.html">Movies to See</a>
+      <a href="best.html">Best Movies</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; BigoleMenu</button>
+    </div>
   <header>
     <h1>
       addy and emily's movie experience
@@ -16,40 +28,25 @@
     addy and emily have had an absolutely awful time and here are the reasons why:
   </h2>
 
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-    <a href="index.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Seen.html">Movies We've Seen</a>
-    <a href="wannaSee.html">Movies We Wanna See</a>
-    <a href="best.html">Best Movies</a>
-  </div>
-  
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">&#9776; BigoleMenu</button>
-  </div>
+
 
   </header>
 
 <h2>
-  We wanna see loads of movies. 
+  Here is a list of some of the movies we want to see 
 </h2>
+
+<div class="docsTable">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSsq9ySgSPzKqpPBGY9NIoAYQ538I1eQS6n84KNc-3wV7faXWKOzU66bNSEzGP91T6nDXZJVIffruOd/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+</div>
+</div>
 
 <footer class="floorFooter">
   <p>made by emily with luv </p>
 </footer>
-</div>
 
-<script>
-  function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
+<script src="resources/index.js"></script>
 </script>
 </body>
 </html>
